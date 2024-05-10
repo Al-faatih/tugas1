@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom JS</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>
+            Hallo, nama saya : <span id="nama">Andrian Roby Maulana</span>
+        </h1>
+        <h1>
+            Website dasar : <span id="nilai">80</span>
+        </h1>
+        <h1>
+            <span id="status"></span>
+        </h1>
+    </div>
+
+    <script>
+        // Retrieve elements
+        const namaElement = document.getElementById('nama');
+        const nilaiElement = document.getElementById('nilai');
+        const statusElement = document.getElementById('status');
+
+        // Set initial values
+        namaElement.textContent = 'andrian ';
+        nilaiElement.textContent = '80';
+
+        // Determine status based on the value of 'nilai'
+        const nilai = parseInt(nilaiElement.textContent);
+        statusElement.textContent = nilai ? 'mengulang' : 'tidak mengulang';
+    </script>
+</body>
+
+</html>
